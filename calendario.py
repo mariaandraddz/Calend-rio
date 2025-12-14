@@ -41,7 +41,7 @@ if ano is not None:
         try:
             locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
         except locale.Error:
-            pass  # Fallback to default locale if pt_BR is not available
+            pass
         print(f"\n--- Calendário de {mes}/{ano}---")
         print(calendar.month(ano, mes))
     else:
